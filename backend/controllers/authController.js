@@ -1,7 +1,7 @@
 import User from '../models/UserModels.js';
 import bcrypt from 'bcryptjs';
 import generateToken from '../utils/generateToken.js';
-import asyncHandler from '../middlewares/asyncHandler.js';
+import asyncHandler from '../utils/asyncHandler.js';
 import Joi from 'joi';
 
 // Simple validation schema for registration
