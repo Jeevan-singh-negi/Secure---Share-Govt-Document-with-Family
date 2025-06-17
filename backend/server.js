@@ -6,6 +6,7 @@ import { notFound, errorHandler } from './middlewares/errorHandler.js';
 import authRoutes from './routes/authRoutes.js';
 import userRoutes from './routes/userRoutes.js';
 import documentroutes from './routes/documentRoutes.js';
+import shareRoutes from './routes/shareRoutes.js';
 
 dotenv.config();
 const app = express();
@@ -20,6 +21,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes)
 
 app.use('/api/documents', documentroutes)
+
+app.use('/api/share', shareRoutes);
 
 
 

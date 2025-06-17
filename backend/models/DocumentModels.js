@@ -34,6 +34,7 @@ const documentSchema = new mongoose.Schema(
       },
     ],
     expiresAt: Date, // For expirable shares
+    shareToken: String, // For secure sharing
   },
   { timestamps: true }
 );
