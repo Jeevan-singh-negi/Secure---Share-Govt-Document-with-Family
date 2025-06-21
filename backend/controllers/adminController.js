@@ -2,7 +2,7 @@ import User from '../models/UserModels.js';
 import Document from '../models/DocumentModels.js';
 import asyncHandler from '../utils/asyncHandler.js';
 import logger from '../utils/logger.js';
-import validator from '../utils/validator.js'; // Assuming you have custom validation logic
+import {validator} from '../utils/validator.js'; // Assuming you have custom validation logic
 
 // 1. Get all users
 export const getAllUsers = asyncHandler(async (req, res) => {

@@ -1,7 +1,7 @@
 // validator.js utility for validation functions
 // Example: isIn function to check if a value is in an array
 
-export const isIn = (value, array) => {
+export const validator = (value, array) => {
   return array.includes(value);
 };
 
