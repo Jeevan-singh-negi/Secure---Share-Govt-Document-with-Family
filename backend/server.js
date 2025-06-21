@@ -7,6 +7,8 @@ import authRoutes from './routes/authRoutes.js';
 import userRoutes from './routes/userRoutes.js';
 import documentroutes from './routes/documentRoutes.js';
 import shareRoutes from './routes/shareRoutes.js';
+import adminRoutes from './routes/adminRoutes.js';
+
 
 dotenv.config();
 const app = express();
@@ -23,6 +25,8 @@ app.use('/api/users', userRoutes)
 app.use('/api/documents', documentroutes)
 
 app.use('/api/share', shareRoutes);
+
+app.use('/api/admin', adminRoutes)
 
 
 
